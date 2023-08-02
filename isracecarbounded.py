@@ -64,6 +64,7 @@ def move(dir, pos):
 
 class Solution:
   def isracecarbounded(self, instructions):
+    return instructions.count("R") != instructions.count("L")
     #type instructions: string
     #return type: boolean
     initial_pos=[0,0]
